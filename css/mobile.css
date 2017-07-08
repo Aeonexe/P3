@@ -1,0 +1,276 @@
+body {
+	overflow: initial;
+}
+
+ .mobile {display: inherit; }
+.desktop {display: none; }
+
+/***************************************************************************
+ Fix 
+ Sobreescribe los estílos del sitio que no qudan en el diseño.
+ */
+
+ 	/* Nav bar */
+
+		.tm-navbar {
+		width: 100%;
+		}
+
+		#p3-logo {
+		width: 170px;
+		}
+
+		.uk-navbar-content {
+		height: 100px;
+		}
+
+	/* Header */
+		.tm-headerbar, .tm-navbar {
+		width: 100%;
+		}
+
+/**************************************************************************
+slider */
+
+	.text-right .text-remate:after, 
+	.text-left .text-remate:before {
+	display: none;
+	}
+
+	.text-left .text-remate {
+	padding-right: 30px;
+	}
+
+	.text-right .text-remate {
+	padding-left: 30px;
+	}
+
+/***************************************************************************
+Testimonial */
+
+	#tm-top-b .uk-panel:nth-child(1) {
+	background-image: url(../images/engrane-light.png) !important;
+	}
+
+	.p3-quote h4 {
+	font-size: 22px;
+	}
+
+/***************************************************************************
+	 Clientes */
+
+    /* testimonio */
+
+		.p3-block-top, 
+		.p3-block-bot {
+		width: 91%;
+		padding: 20px;
+		background-color: rgba(232, 232, 232, 0.9);
+		}
+
+/**********************************************************************
+Formulario */
+
+
+		.mrt-form-home-block-small {
+		clear: both !important;
+		width: 100%;
+		padding: 12px 0;
+		}
+
+
+/****************************************************************************
+Newsletter*/
+	#p3-newsletter input {
+	width: 100%;
+	border-radius: 100px !important;
+	}
+
+	#p3-newsletter button {
+	width: 40%;
+	line-height: 1;
+	font-size: 12px !important;
+	margin: 0 !important;
+	}
+
+	#p3-newsletter input, #p3-newsletter button {
+	height: 60px;
+	}
+
+	#p3-newsletter {
+	flex-direction: column;
+	}
+
+	#p3-newsletter .news-label {
+	margin-bottom: 16px;
+	text-align: left;
+	}
+
+	#p3-newsletter .news {
+	font-family: 'Oswald', 'Open sans', sans-serif;
+	text-transform: uppercase;
+	color: gray;
+	}
+
+
+/***************************************************************************
+Bottom A Footer */
+
+	.p3-zone > div {
+	margin-bottom: 40px;
+	}
+
+	.p3-zone > div:nth-child(1) {
+	text-align: left !important;
+	}
+
+	#tm-bottom-a > div:not(:last-child) {
+	border: 0;
+	}
+
+	#tm-bottom-a > div:last-child .p3-zone:first-child {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+/***************************************************************************
+Bottom b */
+
+	#tm-bottom-b {
+	flex-direction: column-reverse;
+	}
+
+/***************************************************************************
+Footer */
+
+	#tm-bottom-b .widget_text {
+	text-align: center !important;
+	margin: 16px 0;
+	}
+
+	.social-icons {
+	text-align: center !important;
+	}
+
+/**************************************************************************
+Page - servicios*/
+
+	/* Menu servicios */
+
+	#servicios-menu {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	}
+		.slider-cell img {
+		float: left;
+		width: 40px;
+		height: auto;
+		}
+
+		.slider-cell h1 {
+		float: left;
+		margin: 0;
+		padding-left: 12px;
+		}
+
+		#servicios-menu .mrt-page-link{
+		width: 80%;
+		min-width: 180px;
+		height: 46px;
+		margin: auto;
+		margin-bottom: 12px;
+		}
+
+        #servicios-menu .mrt-page-link img {
+        height: 100%;
+        width: auto;
+        }
+
+        #servicios-menu .mrt-page-link {
+        flex-direction: row;
+        }
+
+		#servicios-menu .slider {
+		flex-direction: column;
+		}
+
+
+    /* Tabs */
+
+        .wk-tabs {
+        flex-wrap: wrap;
+        }
+
+            .tab-content-top .wk-tabs li {
+            max-height: 90px;
+    		width: 100%;
+            }
+
+        .wk-tabs li a {
+        padding: 12px 10px;
+        }
+
+
+/**************************************************************************** 
+Page author */
+
+	article.author {
+	width: 100%;
+	margin: 12px 0px;
+	min-height: 300px;
+	}
+
+/****************************************************************************
+Archive author */
+
+	body.archive.author .avatar {
+	width: 100%;
+	height: auto;
+	}
+
+	body.archive .uk-article {
+	width: calc(100% - 30px);
+	}
+
+/***************************************************************************
+Single */
+
+	.related-post {
+	width: 100%;
+	}
+
+	/* author */
+		body.single .avatar {
+		display: block;
+		margin: auto;
+		}
+
+		body.single .uk-align-medium-left.container {
+		text-align: center;
+		width: 100%;
+		padding: 0 !important;
+		height: initial !important;
+		}
+
+/****************************************************************************
+Blog */
+
+    .mrt-blog-feed article {
+    width: 100%;
+     margin: 0 0 12px 0 !important;
+    }
+
+/****************************************************************************
+Page buscador */
+
+	#searchform input[type="text"] {
+	max-width: 900px;
+	}
+
+
+/****************************************************************************
+offcanvas */
+
+.parent-pageid-5 .this_menu_item_is_soluciones, .single .this_menu_item_is_blog, .archive.author .this_menu_item_is_impulsores, .search .this_menu_item_is_search {
+border-bottom: 0 !important;
+}
