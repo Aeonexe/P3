@@ -14,6 +14,7 @@
 <link rel="Shortcut Icon" type="image/ico" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
 <!--[if IE]><link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico"><![endif]-->
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/libraries/wpkitui/wpkit-ui.css">
+
 <?php
 
 wp_enqueue_script('jquery');
@@ -146,7 +147,53 @@ if ($scripts) {
 // add feed link
 if (strlen($this['config']->get('rss_url',''))) {
     printf("<link href=\"%s\" rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS 2.0\">\n", $this['config']->get('rss_url'));
+}?>
+<script type="text/javascript" src="<?=get_template_directory_uri()?>/js/jquery-1.12.4.js"> </script>
+<script type="text/javascript">
+
+   $(window).load(function(){
+              url=window.location.href; 
+            if(url.search("metodologia-personalizada-en-procesos")==-1 && url.search("metodologia-personalizada-de-headhunting")==-1 && url.search("consultoria-organizacional-personalizada")==-1){
+                $("body").addClass("active");
+                $(".loader").hide();
+            }
+        
+           if(url.search("metodologia-personalizada-en-procesos")!=-1){
+                if ($(".frm_message").length){
+                    window.location.href = "http://p3impulsores.com/gracias-procesos/"; 
+                }else{
+                    $("body").addClass("active");
+                    $(".loader").hide();
+                }
+            }
+            if(url.search("metodologia-personalizada-de-headhunting")!=-1){
+                if ($(".frm_message").length){
+                    window.location.href = "http://p3impulsores.com/gracias-headhunting/";
+                }else{
+                    $("body").addClass("active");
+                    $(".loader").hide();
+                }
+            }
+            if(url.search("consultoria-organizacional-personalizada")!=-1){
+                if ($(".frm_message").length){
+                    window.location.href = "http://p3impulsores.com/gracias-consultoria/";
+                }else{
+                    $("body").addClass("active");
+                    $(".loader").hide();
+                }
+            }
+   });
+  
+
+</script>
+<style type="text/css">
+body{
+  opacity: 0;
 }
+body.active{
+  opacity: 1;
+}
+</style>
 
-
+<?php
 $this->output('head');

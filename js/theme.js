@@ -23,6 +23,9 @@ jQuery(function($) {
       
     })
 
+    
+
+
     $('.wk-tabgroup-b > div').hide();
     $('.wk-tabgroup-b > div:first-of-type').show();
     $('.wk-tabs a').click(function(e){
