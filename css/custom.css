@@ -5,19 +5,22 @@
  ========================================================================== */
 @import url(formulario.css);
 
-/* 
-Colores 
+/*
+Colores
 Verde #1cbbb4
 Naranja: #ff7200;
 
 /***************************************************************************
- Fix 
+ Fix
  Sobreescribe los estílos del sitio que no qudan en el diseño.
  */
 
  .mobile {display: none; }
 .desktop {display: inherit; }
 
+* {
+      box-sizing: border-box;
+}
 
  body {
  	overflow: hidden;
@@ -107,8 +110,8 @@ h3.uk-panel-title {
 			padding-right: 0 !important;
 			}
 
-		.uk-navbar-nav > li:hover > a, 
-		.uk-navbar-nav > li > a:focus, 
+		.uk-navbar-nav > li:hover > a,
+		.uk-navbar-nav > li > a:focus,
 		.uk-navbar-nav > li.uk-open > a {
 		background-color: transparent;
 		color: white;
@@ -319,7 +322,7 @@ h3.uk-panel-title {
 		box-shadow: none;
 		}
 
-	/* Usa esta clase para fuentes condensadas 
+	/* Usa esta clase para fuentes condensadas
 		Aplica en h1 h2 h3 h4 h5 h6 o cualquier otro */
 	.condensed {
 	font-family: 'Oswald', 'Open Sans Condensed', sans-serif !important;
@@ -340,6 +343,7 @@ h3.uk-panel-title {
 	transition: all .25s linear;
 	cursor: pointer;
 	text-align: center;
+      box-sizing: content-box;
 	}
 
 	.social-icons .icon:hover {
@@ -407,6 +411,7 @@ h3.uk-panel-title {
 	background-color: lightgray;
 	margin-top: 50px;
 	width: 100%;
+      box-sizing: content-box;
 	}
 
     /* Searchform */
@@ -667,7 +672,7 @@ Teléfono link */
 	color: white;
 	border: 2px solid white;
 	padding: 10px 14px;
-	background: #ea5b0b;	
+	background: #ea5b0b;
 	}
 
 	/* Se muestra naranja en children de soluciones */
@@ -727,7 +732,7 @@ Teléfono link */
 		    .frm_form_fields label {
 			font-size: 15px !important;
 		    }
-        
+
 
            .mrt-form-home-block-small {
         	padding: 22px;
@@ -867,13 +872,13 @@ Teléfono link */
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
-            
+
             -webkit-box-pack: center;
-            
+
             -webkit-justify-content: center;
-            
+
                 -ms-flex-pack: center;
-            
+
                     justify-content: center;
             }
 
@@ -946,7 +951,7 @@ Teléfono link */
             }
 
             @media (max-width: 416px) {
-				.p3-slide { 
+				.p3-slide {
 				min-height: 85vh;
 				min-height: calc(100vh - 100px);
 				}
@@ -983,7 +988,7 @@ Teléfono link */
 
 
 
-                
+
             }
             @media (min-width: 1300px) {
                 .p3-slide h4 {
@@ -1073,7 +1078,7 @@ Teléfono link */
 	/* height: 600px; */
 	}
 
-		.p3-block-top, 
+		.p3-block-top,
 		.p3-block-bot {
 		width: 60%;
 		margin: auto;
@@ -1126,7 +1131,7 @@ Teléfono link */
 				width: 100%;
 				max-width: 660px;
 				margin: 0 auto;	}
-						.p3-quote:before, 
+						.p3-quote:before,
 						.p3-quote:after {
 						content: "";
 						display: block;
@@ -1150,7 +1155,7 @@ Teléfono link */
 						.p3-quote:before {
 						border-bottom: 9px solid #ff7201;
 						}
-						
+
 					.p3-quote h4 {
 					font-size: 50px;
 					margin: 12px 0 4px 0;
@@ -1162,7 +1167,7 @@ Teléfono link */
 					margin: 18px 0;
 					text-align: left;
 					}
-					
+
 					.p3-quote-author {
 					font-weight: 900;
 					display: block;
@@ -1212,8 +1217,8 @@ Blog posts */
 		width: 100%;
 		}
 
-		#tm-content .uk-grid article > h1, 
-		#tm-content .uk-grid article > p, 
+		#tm-content .uk-grid article > h1,
+		#tm-content .uk-grid article > p,
 		#tm-content .uk-grid article > ul {
 		box-sizing: border-box;
 		padding: 0 30px;
@@ -1321,7 +1326,7 @@ Newsletter */
 	font-size: 13px;
 	letter-spacing: .1em;
 	}
-	
+
 
 	input.news {
 	background: white !important;
@@ -1335,7 +1340,7 @@ Bottom A Footer */
 	font-size: 11px;
 	line-height: 1.5;
 	}
-	
+
 		.p3-zone .icon-container {
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -1419,13 +1424,13 @@ Page - soluciones */
 		padding: 22px;
 		text-align: center;
 		cursor: pointer;
-            
+
         display: -webkit-box;
-            
+
         display: -webkit-flex;
-            
+
         display: -ms-flexbox;
-            
+
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1462,7 +1467,7 @@ Page - soluciones */
         .tab {
         margin-top: 42px;
         }
- 
+
 /***************************************************************************
 Page servicios new */
 
@@ -1595,7 +1600,7 @@ Tabs */
 		min-height: 300px;
 		background: #fff;
 		box-sizing: border-box;
-		padding: 22px;		
+		padding: 22px;
 		border-top: 0 !important;
 		}
 
@@ -1903,6 +1908,3 @@ input:-ms-input-placeholder {
 input:focus::-webkit-input-placeholder {
    color: gainsboro !important;
 }
-
-
-
